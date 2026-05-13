@@ -746,7 +746,7 @@ let S = {
   attendance:{},
   meals:[],
   expenses:[],
-  gsUrl:'',
+  gsUrl:'https://script.google.com/macros/s/AKfycbwwG063TC5OOfLqy3QVA0aY8auZ5D6kMBE11XXN1zqkb3j1Sr16U1bzf6aWPWHZR-tNOQ/exec',
   lastSync:'',
   autoFetch:true,
   salInRpt:false
@@ -766,7 +766,7 @@ function load(){
       S.attendance=loaded.attendance||{};
       S.meals=Array.isArray(loaded.meals)?loaded.meals:[];
       S.expenses=Array.isArray(loaded.expenses)?loaded.expenses:[];
-      S.gsUrl=loaded.gsUrl||'';
+      S.gsUrl=loaded.gsUrl||'https://script.google.com/macros/s/AKfycbwwG063TC5OOfLqy3QVA0aY8auZ5D6kMBE11XXN1zqkb3j1Sr16U1bzf6aWPWHZR-tNOQ/exec';
       S.lastSync=loaded.lastSync||'';
       if(loaded.autoFetch!==undefined) S.autoFetch=loaded.autoFetch;
       if(loaded.salInRpt!==undefined) S.salInRpt=loaded.salInRpt;
